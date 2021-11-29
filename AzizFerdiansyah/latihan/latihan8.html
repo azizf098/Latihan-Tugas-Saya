@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <h1>Menghitung Nilai Rata Rata</h1>
+  
+  <!-- HTML -->
+ 
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+    alert('Menghitung Nilai Rata Rata');
+  </script>
+  
+
+</head>
+
+<body background=../image/background.jpg>
+<form name= 'form'>
+<table width ='60%'border="0">
+<tr>
+  <td width="50%" align="top">UAS</td>
+  <td width="50%" align="top">
+    <input type="text" name="angka1" size="3" value="70">
+  </td>
+</tr>
+<tr>
+  <td width="50%" align="top">UTS</td>
+  <td width="50%" align="top">
+    <input type="text" name="angka2" size="3" value="70">
+  </td>
+</tr>
+
+<tr>
+<td width="50%" align="top">TUGAS</td>
+<td width="50%" align="top">
+<input type="text" name="angka3" size="3" value="70">
+</td>
+</tr>
+  
+</table>
+<p id="nama"></p>
+<p id="nis"></p>
+</body>
+ 
+   <script>
+     var nama = prompt("Masukan Nama Anda:");
+     if(nama!= ""){
+       document.getElementById("nama").innerHTML = "Nama : " + nama;
+     }
+   </script>
+ 
+   <script>
+     var nis = prompt("Masukan Nis Anda:");
+     if(nis!= ""){
+       document.getElementById("nis").innerHTML = "NIS : " + nis;
+     }
+   </script>
+   <button type="button" onclick="cek()" >Rata Rata=</button>
+<h3 id="tampil"></h3> <br>
+
+<script>
+function cek(){
+var a=form.angka1.value;
+var b=form.angka2.value;
+var c=form.angka3.value;
+var d=(a-(-b)-(-c))/3;
+document.getElementById("tampil").innerHTML=d;
+}
+</script>
+
+</html>
+</body>
+</html>

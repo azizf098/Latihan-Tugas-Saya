@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ <center>   <h1>Konversi Suhu</h1> </center>
+    <script type="text/javascript">
+        function proses(){
+     var c;
+     c = parseInt(document.getElementById("lblcelcius").value);
+      var kelvin;
+      var Farenheit;
+      var Reamur;
+    
+    kelvin = c + 273.25;
+    Farenheit = (c * 1.8) + 32;
+    Reamur = c * 0.8;
+    
+    result.innerHTML = Math.floor(kelvin) + 'Kelvin' + Math.floor(Farenheit) + ' Farenheit ' + Math.floor(Reamur) + ' Reamur ';
+        }
+        function reset(){
+                document.getElementById("lbldetk").value = "";
+                document.getElementById("result").innerHTML = "Masukan Kembali";
+            }
+        </script>
+</head>
+<body background=../image/bckground.jpg>
+    <script>
+        alert('Konversi Suhu')
+    </script>
+          <center>
+    
+            <label>Input</label>
+            <input id="lblcelcius" type="number" placeholder="Masukan Suhu">
+            <label>Celcius</label>
+            <br><br>
+            <label>Hasil :</label>
+            <label id="result"></label>
+            <br><br>
+            <input type="button" value="Proses" onclick="proses()">
+            <input type="button" value="Reset" onclick="reset()">
+            </center>
+            </body>
+            </html>
+            
+</html>
