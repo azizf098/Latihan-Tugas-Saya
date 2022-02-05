@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="manager.css" rel="stylesheet" type="text/css">
+<head>
+    <title>Beranda</title>
+    <style>
+        table{
+            width: 80%;
+            background-color: rgb(245, 222, 179);
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <body background="pastel-music-wallpaper-preview.jpg"
+      <br>
+      <br>
+    <br>
+    <br>
+    <div>
+        <h1 align="center">KASIR</h1>
+        <table border="1" align="center">
+            <tr>
+                <td>Nama Pesanan </td>
+                <td><input type="text" id="pesanan"></td>
+            </tr>
+            <tr>
+                <td>Harga </td>
+                <td><input type="text" id="harga"></td>
+            </tr>
+            <tr>
+                <td>Jumlah </td>
+                <td><input type="text" id="jumlah"></td> 
+            </tr>
+            <tr>
+                <td>Total </td>
+                <td><textarea id="total" disabled></textarea></td>
+            </tr>
+            <tr>
+                <td>Bayar</td>
+                <td><input type="text" id="bayar"></td>
+            </tr>
+            <tr>
+                <td>Kembali</td>
+                <td><textarea  id="kembalian" disabled ></textarea></td>
+            </tr>
+            <tr>
+                <td><button>Hapus</button></td>
+                <td><button onclick="hasil()">Proses</button></td>
+            </tr>
+            <P><a href="manager.html" class="tbl-biru">Ingin menambah pesanan?</a></P>
+   
+    <p> 
+    Klik tombol dibawah untuk mendapatkan no meja
+    </p> 
+   
+    <button onclick="myalert()"> 
+      Tampilkan No Meja
+    </button> 
+   
+    <script> 
+        function myalert() { 
+            alert("no meja anda 15 "); 
+        } 
+    </script> 
+            
+        </table>
+    </div>
+   <script>
+       function hasil(){
+          var harga=parseInt(document.getElementById("harga").value);
+          var jumlah=parseInt(document.getElementById("jumlah").value);
+          var total=harga*jumlah
+            document.getElementById("total").innerHTML=total;
+          var bayar;
+          var bayar=parseInt(document.getElementById("bayar").value);
+          function inputan (){
+           var total;
+              total = document.getElementById("total").value;
+        
+            }
+            var bayar=parseInt(document.getElementById("bayar").innerHTML=bayar);
+            var kembali=parseInt(document.getElementById("kembalian").innerHTML=bayar - total);
+            var total=bayar-total;
+              if(bayar=total){
+              document.getElementById("bayar").innerHTML=total;
+            }
+     
+        }
+   </script>
+</body>
+</html>
